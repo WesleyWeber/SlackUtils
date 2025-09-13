@@ -31,3 +31,4 @@ try:
     os.system("logger \"$0 sent slack msg ({}@{}) at `date`\"".format(chan,msg))
 except Exception as e:
     print(e)
+    

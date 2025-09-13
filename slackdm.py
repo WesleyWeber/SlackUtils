@@ -28,7 +28,6 @@ except IndexError as e:
 
 try:
     response = SLACK_C.chat_postMessage(channel=chan, text=msg)
-
     os.system("logger \"$0 sent slack msg ({}@{}) at `date`\"".format(chan,msg))
 except Exception as e:
     print(e)

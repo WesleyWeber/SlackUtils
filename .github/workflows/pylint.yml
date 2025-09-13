@@ -20,4 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git diff HEAD~1 HEAD --name-only | grep ".py")
+        pylint $(git diff main~1 main --name-only | grep ".py")
